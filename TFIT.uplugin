@@ -1,0 +1,26 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"SemVersion": "1.0.1",
+	"VersionName": "1.0",
+	"FriendlyName": "TFIT",
+	"Description": "",
+	"Category": "Other",
+	"CreatedBy": "Blockout22",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Plugins": [
+		{
+			"Enabled": true,
+			"Name": "SML",
+			"SemVersion": "^3.2.0",
+			"bIsOptional": false
+		}
+	]
+}
