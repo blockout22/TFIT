@@ -39,7 +39,7 @@
 		{
 			"Enabled": true,
 			"Name": "TFIT",
-			"SemVersion": "^1.0.0",
+			"SemVersion": "^1.0.1",
 			"bIsOptional": false
 		},
 		{
