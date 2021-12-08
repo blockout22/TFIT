@@ -7,7 +7,7 @@
  4. Done! go Update your mod 
 
 ### Access the hit Buildable
-You can access the hit Buildable from TFIT Substyem shown in the image below 
+You can access the hit Buildable from TFIT Subsystem shown in the image below 
 
 ![Screenshot](Images/GetTFITSubsystem.PNG)
 
