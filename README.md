@@ -6,6 +6,11 @@
  3. add your widget to the array in TFITDescription Component
  4. Done! go Update your mod 
 
+### Access the hit Buildable
+You can access the hit Buildable from TFIT Substyem shown in the image below 
+
+![Screenshot](Images/GetTFITSubsystem.PNG)
+
 # FAQ
 
 ### Does my mod need to depend on TFIT?
