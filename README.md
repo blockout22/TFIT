@@ -2,7 +2,7 @@
 
 # How to use
  1. Go into your Mod and inside your Buildables Add TFITDescription Component  
- 2. Create a User Widget contains any additional information you want to display for your building
+ 2. Create a User Widget and add additional information you want to display for your building
  3. add your widget to the array in TFITDescription Component
  4. Done! go Update your mod 
 
