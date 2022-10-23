@@ -1,7 +1,7 @@
 {
 	"FileVersion": 3,
 	"Version": 1,
-	"SemVersion": "1.0.4",
+	"SemVersion": "1.0.6",
 	"VersionName": "1.0",
 	"FriendlyName": "TFIT",
 	"Description": "",
@@ -19,7 +19,7 @@
 		{
 			"Enabled": true,
 			"Name": "SML",
-			"SemVersion": "^3.3.0",
+			"SemVersion": "^3.3.2",
 			"bIsOptional": false
 		}
 	]
