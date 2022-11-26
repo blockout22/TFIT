@@ -72,3 +72,8 @@ Plugins/*/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+
+# Editor plugin encryption settings (not used)
+Metadata/Crypto.json
+
+# Stuff below this line should be sorted!
