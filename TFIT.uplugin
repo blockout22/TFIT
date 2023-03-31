@@ -7,7 +7,7 @@
 	"Description": "Tells you more about what you're looking at, be it in the world or your inventory. Highly extensible.",
 	"Category": "Modding",
 	"CreatedBy": "Blockout22, Robb",
-	"CreatedByURL": "",
+	"CreatedByURL": "https://github.com/blockout22/TFIT",
 	"DocsURL": "",
 	"MarketplaceURL": "",
 	"SupportURL": "",
@@ -15,10 +15,17 @@
 	"IsBetaVersion": false,
 	"IsExperimentalVersion": false,
 	"Installed": false,
+	"Modules": [
+		{
+			"Name": "TFIT",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	],
 	"Plugins": [
 		{
-			"Enabled": true,
 			"Name": "SML",
+			"Enabled": true,
 			"SemVersion": "^3.4.1",
 			"bIsOptional": false
 		}
