@@ -5,6 +5,10 @@
 #include "FGRecipe.h"
 #include "FGFoliageResourceUserData.h"
 #include "FGResourceSinkSubsystem.h"
+#include "FGRailroadVehicle.h"
+#include "Creature/FGCreature.h"
+#include "FGInventoryComponent.h"
+#include "FGItemPickup.h"
 
 #include "TFITBPLib.generated.h"
 
@@ -13,9 +17,6 @@ UCLASS()
 class TFIT_API UTFITBPLib : public UBlueprintFunctionLibrary
 {
 	GENERATED_BODY()
-
-	friend class UFGFoliageResourceUserData;
-	friend class AFGResourceSinkSubsystem;
 
 	UFUNCTION(BlueprintCallable)
 		static UFGFoliageResourceUserData* TFIT_GetStaticMesh_FoliageResourceUserData(UStaticMesh* inMesh);
@@ -31,4 +32,10 @@ class TFIT_API UTFITBPLib : public UBlueprintFunctionLibrary
 
 	UFUNCTION(BlueprintCallable)
 		static bool TFIT_GetSinkPointsForItem(AFGResourceSinkSubsystem* subsystem, TSubclassOf<class UFGItemDescriptor> descriptor, int32& out_points, EResourceSinkTrack& out_trackType);
+
+	UFUNCTION(BlueprintCallable)
+		static bool TFIT_GetCppRailroadVehicleData(AFGRailroadVehicle* inVehicle, bool& out_Docked, bool& out_Derailed, UFGPowerConnectionComponent*& out_PowerConnection);
+
+	UFUNCTION(BlueprintCallable)
+		static bool TFIT_GetCreatureDrop(AFGCreature* inCreature, FInventoryStack& out_ItemStack);
 };

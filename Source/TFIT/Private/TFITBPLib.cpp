@@ -2,6 +2,11 @@
 #include "TFIT.h"
 #include "FGFoliageResourceUserData.h"
 #include "FGResourceSinkSubsystem.h"
+#include "FGRailroadVehicle.h"
+#include "Creature/FGCreature.h"
+#include "FGInventoryComponent.h"
+#include "FGItemPickup.h"
+
 
 UFGFoliageResourceUserData* UTFITBPLib::TFIT_GetStaticMesh_FoliageResourceUserData(UStaticMesh* inMesh) {
 	auto AssetUserData = inMesh->GetAssetUserDataOfClass(UFGFoliageResourceUserData::StaticClass());
@@ -35,5 +40,33 @@ bool UTFITBPLib::TFIT_GetSinkPointsForItem(AFGResourceSinkSubsystem* subsystem, 
 	}
 	out_trackType = entry->TrackType;
 	out_points = entry->Value;
+	return true;
+}
+
+bool UTFITBPLib::TFIT_GetCppRailroadVehicleData(AFGRailroadVehicle* inVehicle, bool& out_Docked, bool& out_Derailed, UFGPowerConnectionComponent*& out_PowerConnection)
+{
+	if (!inVehicle) {
+		return false;
+	}
+	out_Docked = inVehicle->IsDocked();
+	out_Derailed = inVehicle->IsDerailed();
+	out_PowerConnection = inVehicle->GetSlidingShoe();
+	return true;
+}
+
+bool UTFITBPLib::TFIT_GetCreatureDrop(AFGCreature* inCreature, FInventoryStack& out_ItemStack)
+{
+	if (!inCreature) {
+		return false;
+	}
+	auto pickup = inCreature->mItemToDrop;
+	if (!pickup) {
+		return false;
+	}
+	auto cdo = pickup.GetDefaultObject();
+	if (!cdo) {
+		return false;
+	}
+	out_ItemStack = cdo->GetPickupItems();
 	return true;
 }
