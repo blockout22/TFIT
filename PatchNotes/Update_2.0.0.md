@@ -10,17 +10,25 @@ Overhaul of the Overlay, brand new Item Tooltip features. Highly customizable an
   - Expanded target support. See what mod added the following content, as well as some extra info
     - Names of **Buildings**
       - ![Manufacturer](https://i.imgur.com/WcLnRWZ.jpeg)
-    - Name, health, status, and drops of **Creatures**
+    - Name, health, AI task status, and drops of **Creatures**
       - ![Creature](TODO)
     - Potential drops from **Foliage**
+      - ![Foliage screenshot](TODO)
     - Contents of **Item Pickups** (like dropped items and plants) and how long it is until they respawn
+      - ![Dropped Item screenshot](TODO)
+      - ![Regrowing Plant screenshot](TODO)
     - Ore type and purity of **Resource Nodes** and **Resource Wells**
+      - ![Resource Node screenshot](TODO)
+      - ![Resource Well screenshot](TODO)
     - Ore type and contained quantity of **Resource Clusters** (the ones found on top of resource nodes)
+      - ![Resource Cluster screenshot](TODO)
     - Name and fuel status of **Vehicles**
+      - TODO does it have speed?
       - https://streamable.com/gtygka
-    - Name and Speed of **Trains**
+    - Name, power status, next destination, mass and cargo mass, and speed/docking/derailment of **Trains**
       - https://streamable.com/mre83a
     - Debugging info for mod developers (off by default)
+      - Hit actor blueprint path and hit component name, exact position in world
   - You can now configure the following in the mod configs:
     - If the overlay is enabled at all
     - X/Y offset and scale of the overlay
