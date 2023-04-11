@@ -1,32 +1,35 @@
-Overhaul of the Overlay, brand new Item Tooltip features. Highly customizable and easy for other mods to extend! Brought to you by Robb#6731
+Overhaul of the Overlay, brand new Item Tooltip and Recipe features. Highly customizable and easy for other mods to extend! Brought to you by Robb#6731
 
 
 
 
 ## New Stuff
 
-<!-- - TODO Support for looking at vehicles -->
 - **Overlay Overhaul**
   - Expanded target support. See what mod added the following content, as well as some extra info
     - Names of **Buildings**
       - ![Manufacturer](https://i.imgur.com/WcLnRWZ.jpeg)
     - Name, health, AI task status, and drops of **Creatures**
-      - ![Creature](TODO)
+      - ![Creature](https://i.imgur.com/qEkkIuv.png)
     - Potential drops from **Foliage**
-      - ![Foliage screenshot](TODO)
+      - ![Foliage screenshot](https://i.imgur.com/67Hqup5.png)
     - Contents of **Item Pickups** (like dropped items and plants) and how long it is until they respawn
-      - ![Dropped Item screenshot](TODO)
-      - ![Regrowing Plant screenshot](TODO)
+      - ![Dropped Item screenshot](https://i.imgur.com/6l11xMc.png)
+      - ![Regrowing Plant screenshot](https://i.imgur.com/ZlvqEVk.png)
     - Ore type and purity of **Resource Nodes** and **Resource Wells**
-      - ![Resource Node screenshot](TODO)
-      - ![Resource Well screenshot](TODO)
+      - ![Resource Node screenshot](https://i.imgur.com/bvpI90n.png)
+        ![Resource Well screenshot](https://i.imgur.com/lkIrktI.png)
     - Ore type and contained quantity of **Resource Clusters** (the ones found on top of resource nodes)
-      - ![Resource Cluster screenshot](TODO)
-    - Name and fuel status of **Vehicles**
-      - TODO does it have speed?
-      - https://streamable.com/gtygka
+      - ![Resource Cluster screenshot](https://i.imgur.com/pD88dCA.png)
+    - Name, speed, and fuel status of **Vehicles**
+      - ![Vehicle screenshot](https://i.imgur.com/pOMJ7Ca.png)
     - Name, power status, next destination, mass and cargo mass, and speed/docking/derailment of **Trains**
-      - https://streamable.com/mre83a
+      - <video controls="" width="360" height="203">
+        <source src="https://i.imgur.com/D1ZeJLt.mp4" autoplay="" controls="" type="video/mp4">
+        </video>
+      <!-- - https://streamable.com/mre83a -->
+    - Docking info and speed of **Drones**
+      - ![Drone screenshot](https://i.imgur.com/T95Z1Cx.png)
   - You can now configure the following in the mod configs:
     - If the overlay is enabled at all
     - X/Y offset and scale of the overlay
@@ -38,18 +41,28 @@ Overhaul of the Overlay, brand new Item Tooltip features. Highly customizable an
   - Additional information is now added to item tooltips! **You can enable/disable all of these from the mod configs.**
   - **Mod Name** - Wondering what mod added this item? Now you can see it in the tooltip!
     - Optionally disable for recipes added by Satisfactory itself
+    - ![Mod Name screenshot](https://i.imgur.com/4jTfN4d.png)
   - **Resource Sink Points** - Find out how many AWESOME Points you'll get from shredding this item, or a whole stack of it. If you can't sink it, it will say so as well.
     - If you don't want this to appear on items that can't be sunk, you can turn it off in the configs.
+    - ![Sink Points screenshot](https://i.imgur.com/b3Wa33z.png)
+    - ![Sink Points unsinkable screenshot](https://i.imgur.com/8v32fCG.png)
   - **Radioactive Items** - Items that are radioactive will now have a radioactive symbol in their tooltip and have the header bar turn lime green.
     - If you don't want this to appear on base-game items, you can turn it off in the configs.
+    - ![Radioactive Item screenshot](https://i.imgur.com/mQOnaUZ.png)
   - **Stack Size** and Form - See what the max stack size of the item you're looking at is, and if it's a liquid or solid.
+    - ![Solid screenshot](https://i.imgur.com/KQyjnML.png)
+    - ![Liquid screenshot](https://i.imgur.com/rijtuKf.png)
+    - ![Gas screenshot](https://i.imgur.com/YnSoIiq.png)
 - **Recipe Info**
   - Additional information is now added to the recipe section of tooltips, which also appears in the in-game Codex. **You can enable/disable all of these from the mod configs.**
   - **Mod Name** - Wondering what mod added this recipe? Now you can see it in the tooltip!
     - Optionally disable for recipes added by Satisfactory itself
+    - ![Recipe Mod Name screenshot](https://i.imgur.com/95LDarx.png)
   - **Sink Points Profit** - Find out how many AWESOME Points the recipe gains you.
     - It will attempt to estimate (displaying a warning symbol) when unsinkable items are involved in the recipe.
     - Optionally enable displaying a points per minute calculation
+    - ![Sink Points Profit screenshot](https://i.imgur.com/yO7ijMk.png)
+      ![Sink Points Profit codex screenshot](https://i.imgur.com/u2v3Vb7.png)
 
 ## Changed Stuff
 
@@ -63,13 +76,13 @@ Overhaul of the Overlay, brand new Item Tooltip features. Highly customizable an
 
 ## Known Bugs
 
-- TODO Does not register vanilla ore nodes
+- Some plants don't show up on the foliage overlay
 
 ## Cool Tools for Developers
 
 - **Recipe Path Display**
   - View the blueprint path of a recipe for troubleshooting and research
-  - ![Recipe Path Display](TODO)
+  - ![Recipe Path Display](https://i.imgur.com/Xx6MWQW.png)
 - **Automatic Sink Point Calculation!**
   - You can use TFIT to semi-automatically calculate sink points for your own mods' items!
   - The tool will suggest a points value for the first output product of a recipe based on the input points of the recipe and an "improvement multiplier" that you determine. A good value is `2.0` for +100% points.
