@@ -43,11 +43,10 @@ Overhaul of the Overlay, brand new Item Tooltip and Recipe features. Highly cust
     - Optionally disable for recipes added by Satisfactory itself
     - ![Mod Name screenshot](https://i.imgur.com/4jTfN4d.png)
   - **Resource Sink Points** - Find out how many AWESOME Points you'll get from shredding this item, or a whole stack of it. If you can't sink it, it will say so as well.
-    - If you don't want this to appear on items that can't be sunk, you can turn it off in the configs.
+    - Optionally disable for items that can't be sunk
     - ![Sink Points screenshot](https://i.imgur.com/b3Wa33z.png)
     - ![Sink Points unsinkable screenshot](https://i.imgur.com/8v32fCG.png)
   - **Radioactive Items** - Items that are radioactive will now have a radioactive symbol in their tooltip and have the header bar turn lime green.
-    - If you don't want this to appear on base-game items, you can turn it off in the configs.
     - ![Radioactive Item screenshot](https://i.imgur.com/mQOnaUZ.png)
   - **Stack Size** and Form - See what the max stack size of the item you're looking at is, and if it's a liquid or solid.
     - ![Solid screenshot](https://i.imgur.com/KQyjnML.png)
@@ -55,6 +54,8 @@ Overhaul of the Overlay, brand new Item Tooltip and Recipe features. Highly cust
     - ![Gas screenshot](https://i.imgur.com/YnSoIiq.png)
 - **Recipe Info**
   - Additional information is now added to the recipe section of tooltips, which also appears in the in-game Codex. **You can enable/disable all of these from the mod configs.**
+  - Recipes are renamed to their display name, if they have one.
+    - ![Renamed recipes screenshot](https://i.imgur.com/51JIskP.png)
   - **Mod Name** - Wondering what mod added this recipe? Now you can see it in the tooltip!
     - Optionally disable for recipes added by Satisfactory itself
     - ![Recipe Mod Name screenshot](https://i.imgur.com/95LDarx.png)
@@ -63,6 +64,14 @@ Overhaul of the Overlay, brand new Item Tooltip and Recipe features. Highly cust
     - Optionally enable displaying a points per minute calculation
     - ![Sink Points Profit screenshot](https://i.imgur.com/yO7ijMk.png)
       ![Sink Points Profit codex screenshot](https://i.imgur.com/u2v3Vb7.png)
+- **Build Gun Menu**
+  - **What Mod Added This Category?**
+    - Tooltip will say what mod added the build category to the left sidebar
+    - Disabled by default for categories added by Satisfactory itself
+    - ![Build Gun category screenshot](TODO)
+  - **What Mod Added This Building?**
+    - TODO needs its own rich text
+    - ![Build Gun building mod name screenshot](TODO)
 
 ## Changed Stuff
 
@@ -82,6 +91,7 @@ Overhaul of the Overlay, brand new Item Tooltip and Recipe features. Highly cust
 
 - **Recipe Path Display**
   - View the blueprint path of a recipe for troubleshooting and research
+  - Click it (from the codex) to copy the path to clipboard
   - ![Recipe Path Display](https://i.imgur.com/Xx6MWQW.png)
 - **Automatic Sink Point Calculation!**
   - You can use TFIT to semi-automatically calculate sink points for your own mods' items!
