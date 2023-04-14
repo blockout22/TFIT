@@ -65,6 +65,7 @@ Overhaul of the Overlay, brand new Item Tooltip and Recipe features. Highly cust
     - ![Sink Points Profit screenshot](https://i.imgur.com/yO7ijMk.png)
       ![Sink Points Profit codex screenshot](https://i.imgur.com/u2v3Vb7.png)
 - **Build Gun Menu**
+  - Makes the Info Sidebar in the Build Gun scrollable. A scrollbar will appear if information displayed by this mod (or any other mod) would make it longer than the window.
   - **What Mod Added This Category?**
     - Tooltip will say what mod added the build category to the left sidebar
     - Disabled by default for categories added by Satisfactory itself
@@ -86,6 +87,8 @@ Overhaul of the Overlay, brand new Item Tooltip and Recipe features. Highly cust
 ## Known Bugs
 
 - Some plants don't show up on the foliage overlay
+- Gates have an unusually large hitbox (for their player/vehicle detector trigger) so the "what am I looking at" overlay will sometimes say you're looking at a gate when you're actually looking at something else
+- If a mod modifies content via a Content Default Object modification, it does not leave any trace that is detectable by TFIT. This means that TFIT will not be able to detect what mod modified the modified content, and could still credit it as being from Satisfactory.
 
 ## Cool Tools for Developers
 
@@ -93,6 +96,9 @@ Overhaul of the Overlay, brand new Item Tooltip and Recipe features. Highly cust
   - View the blueprint path of a recipe for troubleshooting and research
   - Click it (from the codex) to copy the path to clipboard
   - ![Recipe Path Display](https://i.imgur.com/Xx6MWQW.png)
+- **Descriptor Path Display**
+  - View the blueprint path of a descriptor for troubleshooting and research
+  - 
 - **Automatic Sink Point Calculation!**
   - You can use TFIT to semi-automatically calculate sink points for your own mods' items!
   - The tool will suggest a points value for the first output product of a recipe based on the input points of the recipe and an "improvement multiplier" that you determine. A good value is `2.0` for +100% points.
