@@ -1,24 +1,36 @@
-# TFIT
+CREDIT / ATTRIBUTION At the bottom of the mod page:
 
-## How to use
+![logo](https://raw.githubusercontent.com/deantendo/community/master/com_mp_yes.png)
 
- 1. Go into your Mod and inside your Buildables Add TFITDescription Component  
- 2. Create a User Widget and add additional information you want to display for your building
- 3. add your widget to the array in TFITDescription Component
- 4. Done! go Update your mod
+### If you have any ideas or feature request join our discord
 
-### Access the hit Buildable
+- <https://discord.gg/ds696q4>
 
-You can access the hit Buildable from TFIT Subsystem shown in the image below
+#### ===== Support blockout22 =====
 
-![Screenshot](Images/GetTFITSubsystem.PNG)
+<a href="https://paypal.me/blockout22" title="" target="_blank" /><img src="https://cdn.discordapp.com/attachments/715598550309797999/739846021768675448/paypal_lg.jpg" alt=""></a>
+<a href="https://www.patreon.com/blockout22" title="" target="_blank" /><img src="https://c5.patreon.com/external/logo/become_a_patron_button.png" alt=""></a>
 
-## FAQ
+A UI mod that is aimed at displaying information about the Building you are looking at such as Building name and which mod it's from, this also comes with a simple API to allow other modders to add custom information on the UI such as power usage and contents of items in Building
 
-### Does my mod need to depend on TFIT?
+<br>
+<br>
 
-Your main mod doesn't need to depend on TFIT
+## Images
 
-### What happend if the user uninstalls TFIT, will my main mod stop working?
+<details><summary>Click to View Images</summary>
 
-No, See above question.
+![logo](https://cdn.discordapp.com/attachments/623891487683510323/903958397269987348/unknown.png?width=640&height=360)
+
+![logo](https://cdn.discordapp.com/attachments/623891487683510323/903958432762187786/unknown.png?width=640&height=360)
+
+![logo](https://cdn.discordapp.com/attachments/701161301732229121/915624466778832946/unknown.png?width=640&height=360)
+![logo](https://cdn.discordapp.com/attachments/623891487683510323/919243774977249290/unknown.png?width=640&height=360)
+
+</details>
+
+## For Mod Devs (How To Add Custom Information)
+
+You can find information on how to extend TFIT's features with your own here: <https://github.com/blockout22/TFIT/blob/main/DEV_README.md>
+
+Icon design by Deantendo#4265
