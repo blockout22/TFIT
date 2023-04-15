@@ -65,14 +65,16 @@ Overhaul of the Overlay, brand new Item Tooltip and Recipe features. Highly cust
     - ![Sink Points Profit screenshot](https://i.imgur.com/yO7ijMk.png)
       ![Sink Points Profit codex screenshot](https://i.imgur.com/u2v3Vb7.png)
 - **Build Gun Menu**
-  - Makes the Info Sidebar in the Build Gun scrollable. A scrollbar will appear if information displayed by this mod (or any other mod) would make it longer than the window.
+  - Makes the Info Sidebar in the Build Gun scrollable. A scrollbar will appear if information displayed by this mod (or any other mod) would make it longer than the normal window.
   - **What Mod Added This Category?**
     - Tooltip will say what mod added the build category to the left sidebar
     - Disabled by default for categories added by Satisfactory itself
-    - ![Build Gun category screenshot](TODO)
+    - ![Build Gun category screenshot](https://i.imgur.com/Iek58Ih.png)
   - **What Mod Added This Building?**
-    - TODO needs its own rich text
-    - ![Build Gun building mod name screenshot](TODO)
+    - Info Sidebar will tell you what mod added the building
+    - If the mod that added the *recipe* for the building is different from the one that added the building, it will also be displayed
+    - Disabled by default for buildings added by Satisfactory itself (except if a mod provides an alternate building recipe for the building)
+    - ![Build Gun building mod name screenshot](https://i.imgur.com/LB0Z5JF.png)
 
 ## Changed Stuff
 
@@ -98,7 +100,11 @@ Overhaul of the Overlay, brand new Item Tooltip and Recipe features. Highly cust
   - ![Recipe Path Display](https://i.imgur.com/Xx6MWQW.png)
 - **Descriptor Path Display**
   - View the blueprint path of a descriptor for troubleshooting and research
-  - 
+  - ![Descriptor Path Display](https://i.imgur.com/6ZI5cbt.png)
+- **Buildgun Recipe Path Display**
+  - View the blueprint path of a building's recipe for troubleshooting and research
+  - Click it to copy the path to clipboard
+  - ![Buildgun Recipe Path Display](https://i.imgur.com/a3bU2yb.png)
 - **Automatic Sink Point Calculation!**
   - You can use TFIT to semi-automatically calculate sink points for your own mods' items!
   - The tool will suggest a points value for the first output product of a recipe based on the input points of the recipe and an "improvement multiplier" that you determine. A good value is `2.0` for +100% points.
