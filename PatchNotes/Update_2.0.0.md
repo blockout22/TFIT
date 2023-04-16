@@ -1,4 +1,4 @@
-Overhaul of the Overlay, brand new Item Tooltip and Recipe features. Highly customizable and easy for other mods to extend! Brought to you by Robb#6731
+Overhaul of the Overlay, brand new Item Tooltip, Recipe, and Buildgun features. Highly customizable and easy for other mods to extend! Brought to you by Robb#6731
 
 
 
@@ -6,7 +6,14 @@ Overhaul of the Overlay, brand new Item Tooltip and Recipe features. Highly cust
 ## New Stuff
 
 - **Overlay Overhaul**
-  - Expanded target support. See what mod added the following content, as well as some extra info
+  - You can now configure the following in the mod configs:
+    - If the overlay is enabled at all
+    - X/Y offset and scale of the overlay
+    - How far in centimeters to check for what you're looking at
+    - If the overlay should be updated when what you're looking at hasn't changed (performance)
+    - How frequently to update the overlay (in seconds)
+    - Mod name blacklist. For example, include `Satisfactory`, and the overlay won't show when looking at vanilla content
+  - Expanded target support. See what mod added the following content, as well as some extra contextual info
     - Names of **Buildings**
       - ![Manufacturer](https://i.imgur.com/WcLnRWZ.jpeg)
     - Name, health, AI task status, and drops of **Creatures**
@@ -30,17 +37,12 @@ Overhaul of the Overlay, brand new Item Tooltip and Recipe features. Highly cust
       <!-- - https://streamable.com/mre83a -->
     - Docking info and speed of **Drones**
       - ![Drone screenshot](https://i.imgur.com/T95Z1Cx.png)
-  - You can now configure the following in the mod configs:
-    - If the overlay is enabled at all
-    - X/Y offset and scale of the overlay
-    - If the overlay should be updated when what you're looking at hasn't changed
-    - How far in centimeters to check for what you're looking at
-    - How frequently to update the overlay (in seconds)
-    - Mod name blacklist. For example, include `Satisfactory` to leave out all base-game content
-- **Item Tooltip Support**
+- **Item Tooltips**
   - Additional information is now added to item tooltips! **You can enable/disable all of these from the mod configs.**
+  - **Collapse Recipes Section** - By default, you must hold your Sprint key to see the recipes section of the tooltip. This can be reversed in the mod configs.
+    - ![Collapsed recipes screenshot](https://i.imgur.com/nguAWD0.png)
   - **Mod Name** - Wondering what mod added this item? Now you can see it in the tooltip!
-    - Optionally disable for recipes added by Satisfactory itself
+    - Optionally disable for content added by Satisfactory itself
     - ![Mod Name screenshot](https://i.imgur.com/4jTfN4d.png)
   - **Resource Sink Points** - Find out how many AWESOME Points you'll get from shredding this item, or a whole stack of it. If you can't sink it, it will say so as well.
     - Optionally disable for items that can't be sunk
@@ -78,6 +80,7 @@ Overhaul of the Overlay, brand new Item Tooltip and Recipe features. Highly cust
 
 ## Changed Stuff
 
+- The mod has basically been rewritten, so in a sense everything has changed.
 - You can now turn off the "what am I looking at" widget in the mod configs
 - The overlay font has been re-styled to match the base game's UI
 - Changed the layout of the "what am I looking at" widget to scale each section (target name, mod that added, additional info) separately in the case that one of them is very long
@@ -91,6 +94,7 @@ Overhaul of the Overlay, brand new Item Tooltip and Recipe features. Highly cust
 - Some plants don't show up on the foliage overlay
 - Gates have an unusually large hitbox (for their player/vehicle detector trigger) so the "what am I looking at" overlay will sometimes say you're looking at a gate when you're actually looking at something else
 - If a mod modifies content via a Content Default Object modification, it does not leave any trace that is detectable by TFIT. This means that TFIT will not be able to detect what mod modified the modified content, and could still credit it as being from Satisfactory.
+- Fluids will occasionally display their stack size as -0 m^3 the first time their tooltip is displayed. Opening the tooltip again will fix this.
 
 ## Cool Tools for Developers
 
