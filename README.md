@@ -1,36 +1,146 @@
-CREDIT / ATTRIBUTION At the bottom of the mod page:
+# TFIT - The Ficsit Information Tool
+
+Your ultimate source for more information about whatever it is you're looking at. Highly configurable and easily extensible by other mods.
 
 ![logo](https://raw.githubusercontent.com/deantendo/community/master/com_mp_yes.png)
+Multiplayer Compatible!
 
-### If you have any ideas or feature request join our discord
+## Feature Highlights
 
-- <https://discord.gg/ds696q4>
+- Find out what mod added whatever you're looking at to the game, be it a building, item, recipe, or more.
+  - Looking for information about HUB milestones and MAM trees? Check out [MAM Enhancer](https://ficsit.app/mod/MAMTips)!
+- Get useful contextual information about what you're looking at in the world
+- Easily find out what items stack to and how many AWESOME Sink points they're worth
+- Additional information provided by other mods you have installed
 
-#### ===== Support blockout22 =====
+If you have any ideas or feature request join our Discord:
+<https://discord.gg/ds696q4>
 
-<a href="https://paypal.me/blockout22" title="" target="_blank" /><img src="https://cdn.discordapp.com/attachments/715598550309797999/739846021768675448/paypal_lg.jpg" alt=""></a>
-<a href="https://www.patreon.com/blockout22" title="" target="_blank" /><img src="https://c5.patreon.com/external/logo/become_a_patron_button.png" alt=""></a>
+## Full Feature List
 
-A UI mod that is aimed at displaying information about the Building you are looking at such as Building name and which mod it's from, this also comes with a simple API to allow other modders to add custom information on the UI such as power usage and contents of items in Building
+### "What am I Looking At?" Overlay
 
-<br>
-<br>
+- **You can enable/disable the overlay from the mod configs.**
+- Names of **Buildings**
+  - ![Manufacturer](https://i.imgur.com/WcLnRWZ.jpeg)
+- Name, health, AI task status, and drops of **Creatures**
+  - ![Creature](https://i.imgur.com/qEkkIuv.png)
+- Potential drops from **Foliage**
+  - ![Foliage screenshot](https://i.imgur.com/67Hqup5.png)
+- Contents of **Item Pickups** (like dropped items and plants) and how long it is until they respawn
+  - ![Dropped Item screenshot](https://i.imgur.com/6l11xMc.png)
+  - ![Regrowing Plant screenshot](https://i.imgur.com/ZlvqEVk.png)
+- Ore type and purity of **Resource Nodes** and **Resource Wells**
+  - ![Resource Node screenshot](https://i.imgur.com/bvpI90n.png)
+    ![Resource Well screenshot](https://i.imgur.com/lkIrktI.png)
+- Ore type and contained quantity of **Resource Clusters** (the ones found on top of resource nodes)
+  - ![Resource Cluster screenshot](https://i.imgur.com/pD88dCA.png)
+- Name, speed, and fuel status of **Vehicles**
+  - ![Vehicle screenshot](https://i.imgur.com/pOMJ7Ca.png)
+- Name, power status, next destination, mass and cargo mass, and speed/docking/derailment of **Trains**
+  - <video controls="" width="360" height="203">
+    <source src="https://i.imgur.com/vxe5c52.mp4" autoplay="" controls="" type="video/mp4">
+    </video>
+  <!-- - https://streamable.com/mre83a -->
+- Docking info and speed of **Drones**
+  - ![Drone screenshot](https://i.imgur.com/T95Z1Cx.png)
 
-## Images
+### Item Tooltips
 
-<details><summary>Click to View Images</summary>
+- **You can enable/disable all of these from the mod configs.**
+- **Collapse Recipes Section** - By default, you must hold your Sprint key to see the recipes section of the tooltip. This can be reversed in the mod configs.
+  - ![Collapsed recipes screenshot](https://i.imgur.com/nguAWD0.png)
+- **Mod Name** - Wondering what mod added this item? Now you can see it in the tooltip!
+  - Optionally disable for content added by Satisfactory itself
+  - ![Mod Name screenshot](https://i.imgur.com/4jTfN4d.png)
+- **Resource Sink Points** - Find out how many AWESOME Points you'll get from shredding this item, or a whole stack of it. If you can't sink it, it will say so as well.
+  - Optionally disable for items that can't be sunk
+  - Optionally also show for exactly how many items are in the stack, ex. "points for 4 assembly director systems"
+  - ![Sink Points screenshot](https://i.imgur.com/b3Wa33z.png)
+  - ![Sink Points unsinkable screenshot](https://i.imgur.com/8v32fCG.png)
+- **Radioactive Items** - Items that are radioactive will now have a radioactive symbol in their tooltip and have the header bar turn lime green.
+  - ![Radioactive Item screenshot](https://i.imgur.com/mQOnaUZ.png)
+- **Stack Size** and Form - See what the max stack size of the item you're looking at is, and if it's a liquid or solid.
+  - ![Solid screenshot](https://i.imgur.com/KQyjnML.png)
+  - ![Liquid screenshot](https://i.imgur.com/rijtuKf.png)
+  - ![Gas screenshot](https://i.imgur.com/YnSoIiq.png)
+- **Recipe Info**
+- Additional information is now added to the recipe section of tooltips, which also appears in the in-game Codex. **You can enable/disable all of these from the mod configs.**
+- Recipes are renamed to their display name, if they have one.
+  - ![Renamed recipes screenshot](https://i.imgur.com/51JIskP.png)
+- **Mod Name** - Wondering what mod added this recipe? Now you can see it in the tooltip!
+  - Optionally disable for recipes added by Satisfactory itself
+  - ![Recipe Mod Name screenshot](https://i.imgur.com/95LDarx.png)
+- **Sink Points Profit** - Find out how many AWESOME Points the recipe gains you.
+  - It will attempt to estimate (displaying a warning symbol) when unsinkable items are involved in the recipe.
+  - Optionally enable displaying a points per minute calculation
+  - ![Sink Points Profit screenshot](https://i.imgur.com/yO7ijMk.png)
+    ![Sink Points Profit codex screenshot](https://i.imgur.com/u2v3Vb7.png)
 
-![logo](https://cdn.discordapp.com/attachments/623891487683510323/903958397269987348/unknown.png?width=640&height=360)
+### Build Gun Menu
 
-![logo](https://cdn.discordapp.com/attachments/623891487683510323/903958432762187786/unknown.png?width=640&height=360)
+- Makes the Info Sidebar in the Build Gun scrollable. A scrollbar will appear if information displayed by this mod (or any other mod) would make it longer than the normal window.
+- **What Mod Added This Category?**
+  - Tooltip will say what mod added the build category to the left sidebar
+  - Disabled by default for categories added by Satisfactory itself
+  - ![Build Gun category screenshot](https://i.imgur.com/Iek58Ih.png)
+- **What Mod Added This Building?**
+  - Info Sidebar will tell you what mod added the building
+  - If the mod that added the *recipe* for the building is different from the one that added the building, it will also be displayed
+  - Disabled by default for buildings added by Satisfactory itself (except if a mod provides an alternate building recipe for the building)
+  - ![Build Gun building mod name screenshot](https://i.imgur.com/LB0Z5JF.png)
 
-![logo](https://cdn.discordapp.com/attachments/701161301732229121/915624466778832946/unknown.png?width=640&height=360)
-![logo](https://cdn.discordapp.com/attachments/623891487683510323/919243774977249290/unknown.png?width=640&height=360)
+## Support The Developers
 
-</details>
+### blockout22
 
-## For Mod Devs (How To Add Custom Information)
+[![Paypal](https://cdn.discordapp.com/attachments/715598550309797999/739846021768675448/paypal_lg.jpg)](https://paypal.me/blockout22)
+[![Patreon](https://c5.patreon.com/external/logo/become_a_patron_button.png)](https://www.patreon.com/blockout22)
+
+### Robb
+
+Robb is not currently accepting donations; please donate to a charity of your choice instead.
+
+## For Mod Developers
+
+### Developer Utilities
+
+TFIT also includes a number of helpful tools for mod development and troubleshooting.
+
+A quick summary:
+
+- **Overlay**
+  - Debugging info (off by default)
+    - Hit actor blueprint path and hit component name, exact position in world
+- **Recipe Path Display**
+  - View the blueprint path of a recipe for troubleshooting and research
+  - Click it (from the codex) to copy the path to clipboard
+  - ![Recipe Path Display](https://i.imgur.com/Xx6MWQW.png)
+- **Descriptor Path Display**
+  - View the blueprint path of a descriptor for troubleshooting and research
+  - ![Descriptor Path Display](https://i.imgur.com/6ZI5cbt.png)
+- **Buildgun Recipe Path Display**
+  - View the blueprint path of a building's recipe for troubleshooting and research
+  - Click it to copy the path to clipboard
+  - ![Buildgun Recipe Path Display](https://i.imgur.com/a3bU2yb.png)
+- **Automatic Sink Point Calculation!**
+  - You can use TFIT to semi-automatically calculate sink points for your own mods' items!
+  - The tool will suggest a points value for the first output product of a recipe based on the input points of the recipe and an "improvement multiplier" that you determine. A good value is `2.0` for +100% points.
+  - Once enabled in the mod config, use the chat command `/tfit_suggest_points <output mult of input ex. 2.0 for +100%> [mod reference filter]`
+  - It will process every registered recipe in the game unless you filter it down by supplying a mod reference filter
+  - The command generate two files in the `\FactoryGame\Mods\TFIT\Output` folder. One of them is a CSV file ready for import into the editor as a data table. The second is a CSV file that contains metadata such as items that could not be factored into the calculation (had no points or was a fluid)
+  - The equation used is `output mult * (sum of ingredients input points) / output count`. It does not traverse any further than one level of recipe products, so you may need to selectively bring in pieces at a time to "build out" the points for the items involved in a processing chain.
+  - ![Example of the command output](https://cdn.discordapp.com/attachments/623891487683510323/1095174826831917096/image.png)
+  - ![Example of the data table](https://cdn.discordapp.com/attachments/623891487683510323/1095174955135680622/image.png)
+
+### Using TFIT in your Mod
+
+Your mod doesn't need to dependency-require TFIT to still benefit from and extend its feature set!
 
 You can find information on how to extend TFIT's features with your own here: <https://github.com/blockout22/TFIT/blob/main/DEV_README.md>
 
-Icon design by Deantendo#4265
+## Credits
+
+- Original mod by blockout22#1880
+- 2.0.0 update by Robb#6731
+- Icon design by Deantendo#4265

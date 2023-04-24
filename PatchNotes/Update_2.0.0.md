@@ -1,4 +1,4 @@
-Overhaul of the Overlay, brand new Item Tooltip, Recipe, and Buildgun features. Highly customizable and easy for other mods to extend! Brought to you by Robb#6731
+Overhaul of the Overlay, brand new Overlay Item Tooltip, Recipe, and Buildgun features. Highly customizable and easy for other mods to extend! Brought to you by Robb#6731
 
 
 
@@ -32,7 +32,7 @@ Overhaul of the Overlay, brand new Item Tooltip, Recipe, and Buildgun features. 
       - ![Vehicle screenshot](https://i.imgur.com/pOMJ7Ca.png)
     - Name, power status, next destination, mass and cargo mass, and speed/docking/derailment of **Trains**
       - <video controls="" width="360" height="203">
-        <source src="https://i.imgur.com/D1ZeJLt.mp4" autoplay="" controls="" type="video/mp4">
+        <source src="https://i.imgur.com/vxe5c52.mp4" autoplay="" controls="" type="video/mp4">
         </video>
       <!-- - https://streamable.com/mre83a -->
     - Docking info and speed of **Drones**
@@ -46,6 +46,7 @@ Overhaul of the Overlay, brand new Item Tooltip, Recipe, and Buildgun features. 
     - ![Mod Name screenshot](https://i.imgur.com/4jTfN4d.png)
   - **Resource Sink Points** - Find out how many AWESOME Points you'll get from shredding this item, or a whole stack of it. If you can't sink it, it will say so as well.
     - Optionally disable for items that can't be sunk
+    - Optionally also show for exactly how many items are in the stack, ex. "points for 4 assembly director systems"
     - ![Sink Points screenshot](https://i.imgur.com/b3Wa33z.png)
     - ![Sink Points unsinkable screenshot](https://i.imgur.com/8v32fCG.png)
   - **Radioactive Items** - Items that are radioactive will now have a radioactive symbol in their tooltip and have the header bar turn lime green.
