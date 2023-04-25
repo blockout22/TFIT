@@ -64,7 +64,14 @@ If you have any ideas or feature request join our Discord:
   - ![Solid screenshot](https://i.imgur.com/KQyjnML.png)
   - ![Liquid screenshot](https://i.imgur.com/rijtuKf.png)
   - ![Gas screenshot](https://i.imgur.com/YnSoIiq.png)
-- **Recipe Info**
+- **Fuel Energy Value** - Find out how much juice is stored this item, or a whole stack of it.
+  - Disabled by default for items with no energy value
+  - Optionally also show for exactly how many items are in the stack, ex. "energy for 28.3 L of fuel"
+  - ![Fuel screenshot](https://i.imgur.com/HcXSDnj.png)
+  - ![Fuel fluid screenshot](https://i.imgur.com/2c7vJHh.png)
+
+### Recipe Information
+
 - Additional information is now added to the recipe section of tooltips, which also appears in the in-game Codex. **You can enable/disable all of these from the mod configs.**
 - Recipes are renamed to their display name, if they have one.
   - ![Renamed recipes screenshot](https://i.imgur.com/51JIskP.png)

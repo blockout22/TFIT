@@ -38,4 +38,7 @@ class TFIT_API UTFITBPLib : public UBlueprintFunctionLibrary
 
 	UFUNCTION(BlueprintCallable)
 		static bool TFIT_GetCreatureDrop(AFGCreature* inCreature, FInventoryStack& out_ItemStack);
+
+	UFUNCTION(BlueprintCallable)
+		static void TFIT_WriteStringToFile(FString Path, FString resultString, bool Relative);
 };

@@ -70,3 +70,19 @@ bool UTFITBPLib::TFIT_GetCreatureDrop(AFGCreature* inCreature, FInventoryStack& 
 	out_ItemStack = cdo->GetPickupItems();
 	return true;
 }
+
+void UTFITBPLib::TFIT_WriteStringToFile(FString Path, FString resultString, bool Relative) {
+	// Adapted from ContentLib
+#if WITH_EDITOR 
+	FFileHelper::SaveStringToFile(resultString, Relative ? *(FPaths::ProjectDir() + Path) : *Path);
+#else
+	const FString AbsoluteRootPath = FPaths::ConvertRelativePathToFull(FPaths::ProjectDir());
+	const FString AbsolutePath = AbsoluteRootPath + TEXT("Mods/") + Path;
+	if (!AbsolutePath.Contains(TEXT(".."))) {
+		FFileHelper::SaveStringToFile(resultString, *AbsolutePath);
+	}
+	else {
+		UE_LOG(LogTFIT, Error, TEXT("Absolute or escaping Paths are not allowed in Runtime"));
+	}
+#endif
+}
