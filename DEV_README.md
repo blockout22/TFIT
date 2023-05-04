@@ -15,6 +15,8 @@ For code examples, look at TFIT's own handlers.
 
 HandleCreature and HandlePickup are examples of cases where a subsystem actor was used as the handler instead of a plain UObject because world context was required.
 
+**Remember - If you use a Subsystem as a handler, set its replication policy accordingly (ex. "Spawn on Client and Server, Never Replicate) or else client behavior will differ from servers!"**
+
 ## Overlay Handlers
 
 - Mod developers can create their own handlers to display additional custom information. Two possible approaches:

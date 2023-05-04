@@ -5,7 +5,7 @@
 #include "CoreMinimal.h"
 #include "Modules/ModuleManager.h"
 
-DECLARE_LOG_CATEGORY_EXTERN(LogTFIT, Log, All);
+DECLARE_LOG_CATEGORY_EXTERN(LogTFIT, Verbose, All);
 
 class FTFITModule : public IModuleInterface
 {
