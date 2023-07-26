@@ -6,6 +6,7 @@
 #include "Creature/FGCreature.h"
 #include "FGInventoryComponent.h"
 #include "FGItemPickup.h"
+#include "FGBuildablePipelineFlowIndicator.h"
 
 
 UFGFoliageResourceUserData* UTFITBPLib::TFIT_GetStaticMesh_FoliageResourceUserData(UStaticMesh* inMesh) {
@@ -85,4 +86,12 @@ void UTFITBPLib::TFIT_WriteStringToFile(FString Path, FString resultString, bool
 		UE_LOG(LogTFIT, Error, TEXT("Absolute or escaping Paths are not allowed in Runtime"));
 	}
 #endif
+}
+
+TSubclassOf<UFGItemDescriptor> UTFITBPLib::TFIT_PipelineIndicatorCachedFluid(AFGBuildablePipelineFlowIndicator* inActor)
+{
+	if (!inActor) {
+		return TSubclassOf<UFGItemDescriptor>();
+	}
+	return inActor->mFluidDescriptor;
 }

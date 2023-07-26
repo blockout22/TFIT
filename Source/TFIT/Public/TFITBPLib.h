@@ -1,3 +1,5 @@
+#pragma once
+
 #include "Kismet/BlueprintFunctionLibrary.h"
 
 #include "FGFoliageIdentifier.h"
@@ -9,6 +11,7 @@
 #include "Creature/FGCreature.h"
 #include "FGInventoryComponent.h"
 #include "FGItemPickup.h"
+#include "FGBuildablePipelineFlowIndicator.h"
 
 #include "TFITBPLib.generated.h"
 
@@ -41,4 +44,7 @@ class TFIT_API UTFITBPLib : public UBlueprintFunctionLibrary
 
 	UFUNCTION(BlueprintCallable)
 		static void TFIT_WriteStringToFile(FString Path, FString resultString, bool Relative);
+
+	UFUNCTION(BlueprintCallable)
+		static TSubclassOf<UFGItemDescriptor> TFIT_PipelineIndicatorCachedFluid(AFGBuildablePipelineFlowIndicator* inActor);
 };
