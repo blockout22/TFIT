@@ -17,6 +17,7 @@ Brought to you by Robb#6731
 
 - Fixed that Pipeline Flow Indicators would display an empty overlay.
   - Thanks AcidXDrop for bringing this up!
+- Fixed a missing space in the overlay text when a plant dropped an exact number of items
 
 ## Known Bugs
 
