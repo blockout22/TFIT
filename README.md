@@ -93,6 +93,7 @@ If you have any ideas or feature request join our Discord:
   - ![Build Gun category screenshot](https://i.imgur.com/Iek58Ih.png)
 - **What Mod Added This Building?**
   - Info Sidebar will tell you what mod added the building
+  - Also works for the Customizer tab
   - If the mod that added the *recipe* for the building is different from the one that added the building, it will also be displayed
   - Disabled by default for buildings added by Satisfactory itself (except if a mod provides an alternate building recipe for the building)
   - ![Build Gun building mod name screenshot](https://i.imgur.com/LB0Z5JF.png)
