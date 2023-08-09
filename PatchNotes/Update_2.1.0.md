@@ -1,4 +1,4 @@
-Update 8 support. Improved Pipeline overlay support.
+Update 8 support. Improved Pipeline overlay support. Buildgun customizer tab support.
 
 
 
@@ -8,18 +8,16 @@ Brought to you by Robb#6731
 ## New Stuff
 
 - **What am I Looking At? Overlay**
-  - **Pipelines and Fluid Stands** - Get flow rate and contents information for pipes and fluid storages
-    - ![Pipeline](TODO)
+  - **Pipelines and Fluid Storages** - Get flow rate and contents information
+    <!-- - ![Pipeline](TODO)
     - ![Pipeline Indicator](TODO)
-    - ![Fluid Storage](TODO)
+    - ![Fluid Storage](TODO) -->
 - **Build Gun Menu**
   - **What Mod Added This Building?**
     - Now functions on the Customizer build gun tab as well
 - **Item Tooltips**
   - "Show/Hide Item Tooltip Extended Details" is now an editable keybind instead of reusing your Sprint key
     - Multi-key bindings supported
-
-- TODO sort array to determine tooltip order
 
 ## Bugfixes
 

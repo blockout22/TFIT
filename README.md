@@ -44,6 +44,11 @@ If you have any ideas or feature request join our Discord:
   <!-- - https://streamable.com/mre83a -->
 - Docking info and speed of **Drones**
   - ![Drone screenshot](https://i.imgur.com/T95Z1Cx.png)
+- Flow rate and contents information of **Pipelines** and **Fluid Storages**
+  - Images coming soon
+    <!-- - ![Pipeline](TODO)
+    - ![Pipeline Indicator](TODO)
+    - ![Fluid Storage](TODO) -->
 
 ### Item Tooltips
 
