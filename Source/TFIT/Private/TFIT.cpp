@@ -4,7 +4,7 @@
 
 #define LOCTEXT_NAMESPACE "FTFITModule"
 
-DEFINE_LOG_CATEGORY(LogTFIT);
+DEFINE_LOG_CATEGORY(LogTFITCpp);
 
 void FTFITModule::StartupModule()
 {

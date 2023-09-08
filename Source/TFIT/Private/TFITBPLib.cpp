@@ -83,7 +83,7 @@ void UTFITBPLib::TFIT_WriteStringToFile(FString Path, FString resultString, bool
 		FFileHelper::SaveStringToFile(resultString, *AbsolutePath);
 	}
 	else {
-		UE_LOG(LogTFIT, Error, TEXT("Absolute or escaping Paths are not allowed in Runtime"));
+		UE_LOG(LogTFITCpp, Error, TEXT("Absolute or escaping Paths are not allowed in Runtime"));
 	}
 #endif
 }
@@ -94,4 +94,28 @@ TSubclassOf<UFGItemDescriptor> UTFITBPLib::TFIT_PipelineIndicatorCachedFluid(AFG
 		return TSubclassOf<UFGItemDescriptor>();
 	}
 	return inActor->mFluidDescriptor;
+}
+
+bool UTFITBPLib::TFIT_HasProperty(FName propertyName, UObject* onObject) {
+	if (!onObject) {
+		UE_LOG(LogTFITCpp, Error, TEXT("Passed onObject is invalid"));
+		return false;
+	}
+	if (propertyName.IsNone()) {
+		UE_LOG(LogTFITCpp, Error, TEXT("Passed propertyName is invalid"));
+		return false;
+	}
+	return onObject->GetClass()->FindPropertyByName(propertyName)->IsValidLowLevel();
+}
+
+bool UTFITBPLib::TFIT_HasFunction(FName functionName, UObject* onObject) {
+	if (!onObject) {
+		UE_LOG(LogTFITCpp, Error, TEXT("Passed onObject is invalid"));
+		return false;
+	}
+	if (functionName.IsNone()) {
+		UE_LOG(LogTFITCpp, Error, TEXT("Passed functionName is invalid"));
+		return false;
+	}
+	return onObject->GetClass()->FindFunctionByName(functionName)->IsValidLowLevelFast();
 }
