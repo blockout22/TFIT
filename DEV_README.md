@@ -103,7 +103,7 @@ There is no need to call the parent function - the parent has a no-op stub.
 
 ![OverrideComponentMethod](Images/OverrideComponentMethod.png)
 
-As demonstrated in the screenshot of Approach 2 in the [section above](/#Actor_Component_System),
+As demonstrated in the screenshot of Approach 2 in the [section above](#actor-component-system),
 you can use the Actor Component method "Get Owner" to get the specific instance of your actor
 for use in your widget.
 
