@@ -52,15 +52,13 @@ If you use these, you will need to list TFIT as a dependency in your mod's `uplu
 
 - Create a Widget 
 - Get the last hit Buildable as shown in the image below and cast it to your buildable 
-![widget](../Images/TFIT_Subsystem.png)
+![widget](Images/TFIT_Subsystem.png)
 
 - Add TFITOverlayProviderComponent to your FGBuildable
-![Component](../Images/TFIT_Component.png)
+![Component](Images/TFIT_Component.png)
 
 - Add your widget to TFITOverlayProviderComponent More Info List
-![More Info](../Images/TFIT_AddCustomWidget.png)
-
-- 
+![More Info](Images/TFIT_AddCustomWidget.png)
 
 ## FAQ
 
