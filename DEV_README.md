@@ -46,6 +46,22 @@ TFIT offers a few useful functions, such as:
 
 If you use these, you will need to list TFIT as a dependency in your mod's `uplugin` file.
 
+## TL;DR (Quick Tutorial)
+
+### TFIT Overlay
+
+- Create a Widget 
+- Get the last hit Buildable as shown in the image below and cast it to your buildable 
+![widget](../Images/TFIT_Subsystem.png)
+
+- Add TFITOverlayProviderComponent to your FGBuildable
+![Component](../Images/TFIT_Component.png)
+
+- Add your widget to TFITOverlayProviderComponent More Info List
+![More Info](../Images/TFIT_AddCustomWidget.png)
+
+- 
+
 ## FAQ
 
 If you have any other questions, please contact Robb#6731 on the main modding discord.
