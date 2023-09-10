@@ -8,6 +8,7 @@ Custom colors for the What am I Looking At? Overlay
 - **What am I Looking At? Overlay**
   - Ability to configure the background color and transparency of the overlay and the mod name portions
   - Easy to use color picker widget in the mod config comes with a live preview
+  - ![PreviewImage](https://cdn.discordapp.com/attachments/720649014554656769/1150149809806786600/image.png)
 
 ## Bugfixes
 
