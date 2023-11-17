@@ -22,10 +22,12 @@ If you have any ideas or feature request join our Discord:
 
 - **You can enable/disable the overlay from the mod configs.**
 - Names of **Buildings**
+  - Don't want this info? Turn it off in the configs.
   - ![Manufacturer](https://i.imgur.com/WcLnRWZ.jpeg)
 - Name, health, AI task status, and drops of **Creatures**
   - ![Creature](https://i.imgur.com/qEkkIuv.png)
 - Potential drops from **Foliage**
+  - Don't want this info? Turn it off in the configs.
   - ![Foliage screenshot](https://i.imgur.com/67Hqup5.png)
 - Contents of **Item Pickups** (like dropped items and plants) and how long it is until they respawn
   - ![Dropped Item screenshot](https://i.imgur.com/6l11xMc.png)
@@ -45,10 +47,13 @@ If you have any ideas or feature request join our Discord:
 - Docking info and speed of **Drones**
   - ![Drone screenshot](https://i.imgur.com/T95Z1Cx.png)
 - Flow rate and contents information of **Pipelines** and **Fluid Storages**
-  - Images coming soon
-    <!-- - ![Pipeline](TODO)
-    - ![Pipeline Indicator](TODO)
-    - ![Fluid Storage](TODO) -->
+  - ![FluidBuffer](https://i.imgur.com/LlxbwN3.png)
+  - ![Pipe](https://i.imgur.com/1bTs3mQ.png)
+- Color information about **Painted Structures**
+  - Visualize the swatch and see the color hexes used
+  - Ignores buildings with the default swatch by default (can modify this in the configs)
+  - Don't want this info? Turn it off in the configs.
+  - ![DemoImage](https://i.imgur.com/zcr9Svm.png)
 
 ### Item Tooltips
 
