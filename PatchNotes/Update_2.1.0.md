@@ -3,7 +3,8 @@ Update 8 support. Improved Pipeline overlay support. Buildgun customizer tab sup
 
 
 
-Brought to you by Robb#6731
+This update brought to you by Robb.
+If you enjoy my work, please consider my [completely optional tip jar](https://ko-fi.com/robb4).
 
 ## New Stuff
 

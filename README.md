@@ -117,7 +117,7 @@ If you have any ideas or feature request join our Discord:
 
 ### Robb
 
-Robb is not currently accepting donations; please donate to a charity of your choice instead.
+If you enjoy Robb's work, please consider donating to his [completely optional tip jar](https://ko-fi.com/robb4).
 
 ## For Mod Developers
 

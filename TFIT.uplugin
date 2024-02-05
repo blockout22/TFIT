@@ -1,8 +1,8 @@
 {
 	"FileVersion": 3,
 	"Version": 2,
-	"SemVersion": "2.3.1",
-	"VersionName": "2.3.1",
+	"SemVersion": "2.4.0",
+	"VersionName": "2.4.0",
 	"FriendlyName": "TFIT - The Ficsit Information Tool",
 	"Description": "Tells you more about what you're looking at, be it in the world or your inventory. Highly configurable and extensible.",
 	"Category": "Modding",
@@ -26,7 +26,7 @@
 		{
 			"Name": "SML",
 			"Enabled": true,
-			"SemVersion": "^3.6.1",
+			"SemVersion": "^3.7.0",
 			"bIsOptional": false
 		}
 	]
