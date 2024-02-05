@@ -3,6 +3,9 @@ Update 8.2 support. Added paintable information visualizer. Configure which Over
 
 
 
+This update brought to you by Robb.
+If you enjoy my work, please consider my [completely optional tip jar](https://ko-fi.com/robb4).
+
 ## New Stuff
 
 - **What am I Looking At? Overlay**
