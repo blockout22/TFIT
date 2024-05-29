@@ -66,6 +66,7 @@ If you have any ideas or feature request join our Discord:
 - **Resource Sink Points** - Find out how many AWESOME Points you'll get from shredding this item, or a whole stack of it. If you can't sink it, it will say so as well.
   - Optionally disable for items that can't be sunk
   - Optionally also show for exactly how many items are in the stack, ex. "points for 4 assembly director systems"
+  - Tells you how many points Liquids and Gasses would be worth if they could be sunk
   - ![Sink Points screenshot](https://i.imgur.com/b3Wa33z.png)
   - ![Sink Points unsinkable screenshot](https://i.imgur.com/8v32fCG.png)
 - **Radioactive Items** - Items that are radioactive will now have a radioactive symbol in their tooltip and have the header bar turn lime green.
@@ -88,8 +89,9 @@ If you have any ideas or feature request join our Discord:
 - **Mod Name** - Wondering what mod added this recipe? Now you can see it in the tooltip!
   - Optionally disable for recipes added by Satisfactory itself
   - ![Recipe Mod Name screenshot](https://i.imgur.com/95LDarx.png)
-- **Sink Points Profit** - Find out how many AWESOME Points the recipe gains you.
-  - It will attempt to estimate (displaying a warning symbol) when unsinkable items are involved in the recipe.
+- **Sink Points Profit** - Find out how many AWESOME Points using the recipe nets you.
+  - Format: `Sum of Recipe Ingredients Points` → `Sum of Recipe Product Points` (±`Percentage difference`)
+  - It will attempt to estimate when unsinkable items are involved in the recipe, displaying a warning symbol when estimates are made. Hover over the warning symbol (in the codex) to see an explanation.
   - Optionally enable displaying a points per minute calculation
   - ![Sink Points Profit screenshot](https://i.imgur.com/yO7ijMk.png)
     ![Sink Points Profit codex screenshot](https://i.imgur.com/u2v3Vb7.png)
@@ -108,11 +110,16 @@ If you have any ideas or feature request join our Discord:
   - Disabled by default for buildings added by Satisfactory itself (except if a mod provides an alternate building recipe for the building)
   - ![Build Gun building mod name screenshot](https://i.imgur.com/LB0Z5JF.png)
 
+### Additional Configuration
+
+- Configure the position, scale, color, and transparency of the overlay
+- Configure if you must hold the Sprint key to expand/collapse recipe display in item tooltips
+
 ## Support The Developers
 
 ### blockout22
 
-[![Paypal](https://cdn.discordapp.com/attachments/715598550309797999/739846021768675448/paypal_lg.jpg)](https://paypal.me/blockout22)
+[![Paypal](https://raw.githubusercontent.com/blockout22/TFIT/main/Images/Modpage/PaypalButton.png)](https://paypal.me/blockout22)
 [![Patreon](https://c5.patreon.com/external/logo/become_a_patron_button.png)](https://www.patreon.com/blockout22)
 
 ### Robb
@@ -148,8 +155,8 @@ A quick summary:
   - It will process every registered recipe in the game unless you filter it down by supplying a mod reference filter
   - The command generate two files in the `\FactoryGame\Mods\TFIT\Output` folder. One of them is a CSV file ready for import into the editor as a data table. The second is a CSV file that contains metadata such as items that could not be factored into the calculation (had no points or was a fluid)
   - The equation used is `output mult * (sum of ingredients input points) / output count`. It does not traverse any further than one level of recipe products, so you may need to selectively bring in pieces at a time to "build out" the points for the items involved in a processing chain.
-  - ![Example of the command output](https://cdn.discordapp.com/attachments/623891487683510323/1095174826831917096/image.png)
-  - ![Example of the data table](https://cdn.discordapp.com/attachments/623891487683510323/1095174955135680622/image.png)
+  - ![Example of the command output](https://raw.githubusercontent.com/blockout22/TFIT/main/Images/Modpage/PointsCalcChat.png)
+  - ![Example of the data table](https://raw.githubusercontent.com/blockout22/TFIT/main/Images/Modpage/PointsCalcDataTable.png)
 
 ### Using TFIT in your Mod
 
