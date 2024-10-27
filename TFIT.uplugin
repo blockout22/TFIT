@@ -1,12 +1,12 @@
 {
 	"FileVersion": 3,
 	"Version": 2,
-	"SemVersion": "2.4.1",
-	"VersionName": "2.4.1",
+	"SemVersion": "2.5.0",
+	"VersionName": "2.5.0",
 	"FriendlyName": "TFIT - The Ficsit Information Tool",
 	"Description": "Tells you more about what you're looking at, be it in the world or your inventory. Highly configurable and extensible.",
 	"Category": "Modding",
-	"CreatedBy": "Blockout22, Robb",
+	"CreatedBy": "Robb, Blockout22",
 	"CreatedByURL": "https://github.com/blockout22/TFIT",
 	"DocsURL": "https://ficsit.app/mod/TFIT",
 	"MarketplaceURL": "",
@@ -26,7 +26,7 @@
 		{
 			"Name": "SML",
 			"Enabled": true,
-			"SemVersion": "^3.7.0",
+			"SemVersion": "^3.8.0",
 			"bIsOptional": false
 		},
 		{
@@ -34,5 +34,6 @@
 			"Enabled": true,
 			"SemVersion": ">=1.0.0"
 		}
-	]
+	],
+	"GameVersion": ">=365306"
 }

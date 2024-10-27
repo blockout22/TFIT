@@ -1,0 +1,48 @@
+Satisfactory 1.0 Support. Some features aren't working yet!
+
+
+
+
+This update brought to you by Robb.
+If you enjoy my work, please consider my [completely optional tip jar](https://ko-fi.com/robb4).
+
+TODO
+
+## New Stuff
+
+- **What am I Looking At? Overlay**
+  - New Handler: **Portable Miner**
+    - TODO ![DemoImage](https://i.imgur.com/zcr9Svm.png)
+    - See what a miner is mining and its mining progress
+    - Arguably pointless (just look at the ground underneath the miner) but it's there now
+- New config option: Fix Base-Game Thousands Separator Bug
+  - TODO is this still needed
+
+## Changed Stuff
+
+- Drones now report their in-use fuel type instead of their stored "energy"
+
+## Not Working Yet
+
+- The foliage information feature is not working yet (it doesn't detect that you're looking at foliage)
+- The building information feature doesn't work for some buildings yet
+  - It doesn't handle new Lightweight actors well (usually foundations and walls) well. I am waiting until the next SF patch, which will significantly change how the system works, to fix this.
+- The overlay debugging (used to be the beacon mesh) is not visible
+- Item pickups info doesn't work
+
+- Inventory item tooltips don't work at all (Child 3 not Vbox, aborting)
+
+## Bugfixes
+
+- Vanilla items will now have their sink points displayed correctly for multiplayer clients.
+- Recipe points improvement calculations are now correct for recipes involving vanilla items when playing as a multiplayer client.
+
+## For Developers
+
+The [Developer Readme](https://github.com/blockout22/TFIT/blob/main/DEV_README.md) has information on how to extend TFIT's functionality in your own mods.
+
+## Known Bugs
+
+- Some plants don't show up on the foliage overlay
+- If a mod modifies content via a Content Default Object modification, it does not leave any trace that is detectable by TFIT. This means that TFIT will not be able to detect what mod modified the modified content, and could still credit it as being from Satisfactory.
+- Fluids will occasionally display their stack size as -0 m^3 the first time their tooltip is displayed. Opening the tooltip again will fix this.
