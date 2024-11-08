@@ -9,6 +9,7 @@
 #include "FGResourceSinkSubsystem.h"
 #include "FGRailroadVehicle.h"
 #include "Creature/FGCreature.h"
+#include "Creature/Enemy/FGCrabHatcher.h"
 #include "FGInventoryComponent.h"
 #include "FGItemPickup.h"
 #include "FGBuildablePipelineFlowIndicator.h"
@@ -38,6 +39,10 @@ class TFIT_API UTFITBPLib : public UBlueprintFunctionLibrary
 
 	UFUNCTION(BlueprintCallable, Category = "TFIT")
 		static bool TFIT_GetCppRailroadVehicleData(AFGRailroadVehicle* inVehicle, bool& out_Docked, bool& out_Derailed, UFGPowerConnectionComponent*& out_PowerConnection);
+	
+	// Done in C++ to avoid spamming logs with CDO access
+	UFUNCTION(BlueprintCallable, Category = "TFIT")
+		static AFGItemPickup* TFIT_GetPickupCDO(TSubclassOf<AFGItemPickup> pickupClass);
 
 	UFUNCTION(BlueprintCallable, Category = "TFIT")
 		static bool TFIT_GetCreatureDrop(AFGCreature* inCreature, FInventoryStack& out_ItemStack);

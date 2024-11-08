@@ -55,16 +55,19 @@ bool UTFITBPLib::TFIT_GetCppRailroadVehicleData(AFGRailroadVehicle* inVehicle, b
 	return true;
 }
 
+AFGItemPickup* UTFITBPLib::TFIT_GetPickupCDO(TSubclassOf<AFGItemPickup> pickupClass) {
+	if (pickupClass) {
+		return pickupClass.GetDefaultObject();
+	}
+	return nullptr;
+}
+
 bool UTFITBPLib::TFIT_GetCreatureDrop(AFGCreature* inCreature, FInventoryStack& out_ItemStack)
 {
 	if (!inCreature) {
 		return false;
 	}
-	auto pickup = inCreature->mItemToDrop;
-	if (!pickup) {
-		return false;
-	}
-	auto cdo = pickup.GetDefaultObject();
+	auto cdo = TFIT_GetPickupCDO(inCreature->mItemToDrop);
 	if (!cdo) {
 		return false;
 	}

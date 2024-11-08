@@ -44,8 +44,8 @@ If you have any ideas or feature request join our Discord:
     <source src="https://i.imgur.com/vxe5c52.mp4" autoplay="" controls="" type="video/mp4">
     </video>
   <!-- - https://streamable.com/mre83a -->
-- Docking info and speed of **Drones**
-  - ![Drone screenshot](https://i.imgur.com/T95Z1Cx.png)
+- Fuel, home port, destination port, docking status, and speed of **Drones**
+  - ![Drone screenshot](https://i.imgur.com/oXIlUC9.jpeg)
 - Flow rate and contents information of **Pipelines** and **Fluid Storages**
   - ![FluidBuffer](https://i.imgur.com/LlxbwN3.png)
   - ![Pipe](https://i.imgur.com/1bTs3mQ.png)
@@ -54,6 +54,10 @@ If you have any ideas or feature request join our Discord:
   - Ignores buildings with the default swatch by default (can modify this in the configs)
   - Don't want this info? Turn it off in the configs.
   - ![DemoImage](https://i.imgur.com/zcr9Svm.png)
+- Resource and mining progress of **Portable Miners**
+  - ![Portable Miner](https://i.imgur.com/mXSY1L6.jpeg)
+- Opening status, requirements, and power consumption of **Drop Pods**
+  - ![PowerCost](https://i.imgur.com/AXTKQbt.jpeg)
 
 ### Item Tooltips
 
@@ -117,14 +121,14 @@ If you have any ideas or feature request join our Discord:
 
 ## Support The Developers
 
+### Robb
+
+If you enjoy Robb's work, please consider donating to his [completely optional tip jar](https://ko-fi.com/robb4).
+
 ### blockout22
 
 [![Paypal](https://raw.githubusercontent.com/blockout22/TFIT/main/Images/Modpage/PaypalButton.png)](https://paypal.me/blockout22)
 [![Patreon](https://c5.patreon.com/external/logo/become_a_patron_button.png)](https://www.patreon.com/blockout22)
-
-### Robb
-
-If you enjoy Robb's work, please consider donating to his [completely optional tip jar](https://ko-fi.com/robb4).
 
 ## For Mod Developers
 
