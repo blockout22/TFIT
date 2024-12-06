@@ -35,9 +35,6 @@ class TFIT_API UTFITBPLib : public UBlueprintFunctionLibrary
 		static void TFIT_GetItemDropWithChanceData(FItemDropWithChance inData, float& out_DropChance, TSubclassOf<class UFGItemDescriptor>& out_ItemClass, int32& out_Min, int32& out_Max);
 
 	UFUNCTION(BlueprintCallable, Category = "TFIT")
-		static bool TFIT_GetSinkPointsForItem(AFGResourceSinkSubsystem* subsystem, TSubclassOf<class UFGItemDescriptor> descriptor, int32& out_points, EResourceSinkTrack& out_trackType);
-
-	UFUNCTION(BlueprintCallable, Category = "TFIT")
 		static bool TFIT_GetCppRailroadVehicleData(AFGRailroadVehicle* inVehicle, bool& out_Docked, bool& out_Derailed, UFGPowerConnectionComponent*& out_PowerConnection);
 	
 	// Done in C++ to avoid spamming logs with CDO access

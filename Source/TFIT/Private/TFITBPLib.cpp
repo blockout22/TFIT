@@ -30,20 +30,6 @@ void UTFITBPLib::TFIT_GetItemDropWithChanceData(FItemDropWithChance inData, floa
 	out_Min = ItemDrop.NumItems.Min;
 }
 
-bool UTFITBPLib::TFIT_GetSinkPointsForItem(AFGResourceSinkSubsystem* subsystem, TSubclassOf<class UFGItemDescriptor> descriptor, int32& out_points, EResourceSinkTrack& out_trackType)
-{
-	if (!subsystem) {
-		return false;
-	}
-	auto entry = subsystem->mCachedResourceSinkPoints.Find(descriptor);
-	if (entry == nullptr) {
-		return false;
-	}
-	out_trackType = entry->TrackType;
-	out_points = entry->Value;
-	return true;
-}
-
 bool UTFITBPLib::TFIT_GetCppRailroadVehicleData(AFGRailroadVehicle* inVehicle, bool& out_Docked, bool& out_Derailed, UFGPowerConnectionComponent*& out_PowerConnection)
 {
 	if (!inVehicle) {
