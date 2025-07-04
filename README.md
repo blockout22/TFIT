@@ -67,6 +67,9 @@ If you have any ideas or feature request join our Discord:
 - **Mod Name** - Wondering what mod added this item? Now you can see it in the tooltip!
   - Optionally disable for content added by Satisfactory itself
   - ![Mod Name screenshot](https://i.imgur.com/4jTfN4d.png)
+- **Dimensional Depot Stockpile** - Upload it or trash it? How much of this item is in your Dimensional Depot right now? No need to search it to find out!
+  - Optionally also show this for Liquids and Gasses
+  - ![Depot Stockpile screenshot](https://i.imgur.com/sn372K6.png)
 - **Resource Sink Points** - Find out how many AWESOME Points you'll get from shredding this item, or a whole stack of it. If you can't sink it, it will say so as well.
   - Optionally disable for items that can't be sunk
   - Optionally also show for exactly how many items are in the stack, ex. "points for 4 assembly director systems"
