@@ -21,9 +21,10 @@ If you have any ideas or feature request join our Discord:
 ### "What am I Looking At?" Overlay
 
 - **You can enable/disable the overlay from the mod configs.**
-- Names of **Buildings**
+- Names of **Buildings** and what Recipe they are set to
   - Don't want this info? Turn it off in the configs.
   - ![Manufacturer](https://i.imgur.com/WcLnRWZ.jpeg)
+  - ![Manufacturer recipe](https://i.imgur.com/LTlBee2.png)
 - Name, health, AI task status, and drops of **Creatures**
   - ![Creature](https://i.imgur.com/qEkkIuv.png)
 - Potential drops from **Foliage**

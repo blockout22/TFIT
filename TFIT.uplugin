@@ -1,8 +1,8 @@
 {
 	"FileVersion": 3,
 	"Version": 2,
-	"SemVersion": "2.7.1",
-	"VersionName": "2.7.1",
+	"SemVersion": "2.8.0",
+	"VersionName": "2.8.0",
 	"FriendlyName": "TFIT - The Ficsit Information Tool",
 	"Description": "Tells you more about what you're looking at, be it in the world or your inventory. Highly configurable and extensible.",
 	"Category": "Modding",
